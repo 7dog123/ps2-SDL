@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_events.h,v 1.11 2004/08/20 18:57:01 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* Include file for SDL event handling */

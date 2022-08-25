@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_video.c,v 1.49 2004/11/25 15:47:49 pmandin Exp $";
+ "@(#) $Id$";
 #endif
 
 /* The high-level video driver subsystem */
@@ -62,6 +62,9 @@ static VideoBootStrap *bootstrap[] = {
 #endif
 #ifdef ENABLE_DIRECTFB
 	&DirectFB_bootstrap,
+#endif
+#ifdef ENABLE_PS2SDK
+	&PS2SDK_bootstrap,
 #endif
 #ifdef ENABLE_PS2GS
 	&PS2GS_bootstrap,
@@ -252,6 +255,7 @@ int SDL_VideoInit (const char *driver_name, Uint32 flags)
 		SDL_VideoQuit();
 		return(-1);
 	}
+
 	SDL_PublicSurface = NULL;	/* Until SDL_SetVideoMode() */
 
 #if 0 /* Don't change the current palette - may be used by other programs.
@@ -273,6 +277,7 @@ int SDL_VideoInit (const char *driver_name, Uint32 flags)
 		SDL_VideoQuit();
 		return(-1);
 	}
+
 	SDL_CursorInit(flags & SDL_INIT_EVENTTHREAD);
 
 	/* We're ready to go! */

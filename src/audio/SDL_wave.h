@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_wave.h,v 1.6 2004/01/04 16:49:11 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* WAVE files are little-endian */

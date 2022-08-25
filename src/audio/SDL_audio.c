@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_audio.c,v 1.26 2004/09/17 13:20:10 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* Allow access to a raw mixing buffer */
@@ -101,6 +101,9 @@ static AudioBootStrap *bootstrap[] = {
 #endif
 #ifdef DISKAUD_SUPPORT
 	&DISKAUD_bootstrap,
+#endif
+#ifdef ENABLE_PS2SDK
+	&PS2AUD_bootstrap,
 #endif
 #ifdef ENABLE_DC
 	&DCAUD_bootstrap,

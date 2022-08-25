@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "SDL.h"
+#include <SDL.h>
 
 static void print_modifiers(void)
 {
@@ -73,6 +73,22 @@ static void PrintKey(SDL_keysym *sym, int pressed)
 	printf("\n");
 }
 
+static void PrintMouseButton(SDL_MouseButtonEvent *buttonevt)
+{
+
+   printf("Button %d is %s ", buttonevt->button, 
+                  buttonevt->state ? "pressed" : "released");
+   printf("\n");
+}
+
+static void PrintMouseMotion(SDL_MouseMotionEvent *motionevt)
+{
+
+   printf("Mouse is at (%d, %d) with relative move (%i, %i)",
+					motionevt->x, motionevt->y, motionevt->xrel, motionevt->yrel);
+   printf("\n");
+}
+
 int main(int argc, char *argv[])
 {
 	SDL_Event event;
@@ -97,9 +113,9 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	/* Set 640x480 video mode */
+	/* Set 640x480xdefault bpp video mode */
 	if ( SDL_SetVideoMode(640, 480, 0, videoflags) == NULL ) {
-		fprintf(stderr, "Couldn't set 640x480 video mode: %s\n",
+		fprintf(stderr, "Couldn't set 640x480 video mode : %s\n",
 							SDL_GetError());
 		exit(2);
 	}
@@ -110,6 +126,9 @@ int main(int argc, char *argv[])
 	/* Enable auto repeat for keyboard input */
 	SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY,
 	                    SDL_DEFAULT_REPEAT_INTERVAL);
+
+
+    printf("Waiting for Keys & Mouse(pad) events...\n");
 
 	/* Watch keystrokes */
 	done = 0;
@@ -124,7 +143,14 @@ int main(int argc, char *argv[])
 				PrintKey(&event.key.keysym, 0);
 				break;
 			case SDL_MOUSEBUTTONDOWN:
-				/* Any button press quits the app... */
+				PrintMouseButton(&event.button);
+				break;		
+			case SDL_MOUSEBUTTONUP:
+				PrintMouseButton(&event.button);
+				break;	
+			case SDL_MOUSEMOTION:
+				PrintMouseMotion(&event.motion);
+				break;	                                		
 			case SDL_QUIT:
 				done = 1;
 				break;

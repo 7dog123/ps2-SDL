@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: blank_cursor.h,v 1.5 2004/01/04 16:49:23 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 

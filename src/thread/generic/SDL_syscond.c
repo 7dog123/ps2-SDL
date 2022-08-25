@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_syscond.c,v 1.5 2004/01/04 16:49:19 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* An implementation of condition variables using semaphores and mutexes */

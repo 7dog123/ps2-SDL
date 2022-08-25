@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_version.h,v 1.14 2004/07/18 22:57:40 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* This header defines the current SDL version */

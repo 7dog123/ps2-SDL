@@ -24,7 +24,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_timer.c,v 1.3 2002/03/06 11:23:02 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 #include <stdlib.h>

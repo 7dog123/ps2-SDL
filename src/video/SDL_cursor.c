@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_cursor.c,v 1.9 2004/01/04 16:49:21 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* General cursor handling code for SDL */

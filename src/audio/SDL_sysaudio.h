@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_sysaudio.h,v 1.21 2004/08/21 03:21:44 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 #ifndef _SDL_sysaudio_h
@@ -162,6 +162,9 @@ extern AudioBootStrap MINTAUDIO_DMA8_bootstrap;
 #endif
 #ifdef DISKAUD_SUPPORT
 extern AudioBootStrap DISKAUD_bootstrap;
+#endif
+#ifdef ENABLE_PS2SDK
+extern AudioBootStrap PS2AUD_bootstrap;
 #endif
 #ifdef ENABLE_DC
 extern AudioBootStrap DCAUD_bootstrap;

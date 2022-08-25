@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_stretch.c,v 1.9 2004/05/16 21:08:55 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* This a stretch blit implementation based on ideas given to me by

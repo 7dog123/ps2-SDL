@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_fatal.c,v 1.8 2004/02/26 19:57:37 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* General fatal signal handling code for SDL */

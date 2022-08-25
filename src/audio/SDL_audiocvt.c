@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_audiocvt.c,v 1.7 2004/12/13 08:49:17 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* Functions for audio drivers to perform runtime conversion of audio format */

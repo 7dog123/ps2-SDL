@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_mixer.c,v 1.10 2004/01/04 16:49:11 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* This provides the default mixing callback for the SDL audio routines */

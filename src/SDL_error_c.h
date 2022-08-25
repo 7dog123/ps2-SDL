@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_error_c.h,v 1.6 2004/07/18 22:57:40 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* This file defines a structure that carries language-independent

@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_types.h,v 1.13 2004/07/21 04:53:26 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* General data types used by the SDL library */

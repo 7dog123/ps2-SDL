@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_keyboard.c,v 1.9 2004/01/04 16:49:17 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* General keyboard handling code for SDL */

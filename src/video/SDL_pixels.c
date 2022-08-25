@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_pixels.c,v 1.12 2004/11/30 14:28:20 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* General (mostly internal) pixel/color manipulation routines for SDL */

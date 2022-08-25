@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_yuv_sw.c,v 1.9 2004/01/04 16:49:22 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* This is the software implementation of the YUV video overlay support */

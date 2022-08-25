@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_sysvideo.h,v 1.23 2004/01/04 16:49:21 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 #ifndef _SDL_sysvideo_h
@@ -343,6 +343,9 @@ extern VideoBootStrap FBCON_bootstrap;
 #endif
 #ifdef ENABLE_DIRECTFB
 extern VideoBootStrap DirectFB_bootstrap;
+#endif
+#ifdef ENABLE_PS2SDK
+extern VideoBootStrap PS2SDK_bootstrap;
 #endif
 #ifdef ENABLE_PS2GS
 extern VideoBootStrap PS2GS_bootstrap;

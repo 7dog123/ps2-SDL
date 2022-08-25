@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_quit.c,v 1.5 2004/01/04 16:49:17 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* General quit handling code for SDL */

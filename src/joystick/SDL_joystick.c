@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_joystick.c,v 1.6 2004/01/04 16:49:17 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* This is the joystick API for Simple DirectMedia Layer */

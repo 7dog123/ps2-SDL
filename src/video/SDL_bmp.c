@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_bmp.c,v 1.6 2004/12/14 06:20:49 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 #ifndef DISABLE_FILE

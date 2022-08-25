@@ -162,16 +162,16 @@ int main(int argc, char *argv[])
 		printf("Joystick %d: %s\n",i,name ? name : "Unknown Joystick");
 	}
 
-	if ( argv[1] ) {
-		joystick = SDL_JoystickOpen(atoi(argv[1]));
-		if ( joystick == NULL ) {
-			printf("Couldn't open joystick %d: %s\n", atoi(argv[1]),
-			       SDL_GetError());
-		} else {
-			WatchJoystick(joystick);
-			SDL_JoystickClose(joystick);
-		}
+	/* changes made in ps2sdk version */
+	joystick = SDL_JoystickOpen(0);
+	if ( joystick == NULL ) {
+		printf("Couldn't open joystick %d: %s\n", 0,
+		       SDL_GetError());
+	} else {
+		WatchJoystick(joystick);
+		SDL_JoystickClose(joystick);
 	}
+
 	SDL_QuitSubSystem(SDL_INIT_VIDEO|SDL_INIT_JOYSTICK);
 
 	return(0);

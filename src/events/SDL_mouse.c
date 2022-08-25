@@ -22,7 +22,7 @@
 
 #ifdef SAVE_RCSID
 static char rcsid =
- "@(#) $Id: SDL_mouse.c,v 1.8 2004/08/21 12:38:50 slouken Exp $";
+ "@(#) $Id$";
 #endif
 
 /* General mouse handling code for SDL */
