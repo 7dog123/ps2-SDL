@@ -17,6 +17,7 @@ DIST_SUBDIRS =	\
 	macosx	\
 	mint	\
 	openbsd	\
+        ps2sdk  \
 	osf	\
 	qnx	\
 	win32

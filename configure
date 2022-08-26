@@ -463,7 +463,7 @@ ac_includes_default="\
 # include <unistd.h>
 #endif"
 
-ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS SDL_MAJOR_VERSION SDL_MINOR_VERSION SDL_MICRO_VERSION SDL_INTERFACE_AGE SDL_BINARY_AGE SDL_VERSION LT_RELEASE LT_CURRENT LT_REVISION LT_AGE build build_cpu build_vendor build_os host host_cpu host_vendor host_os target target_cpu target_vendor target_os INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO AMTAR install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM mkdir_p AWK SET_MAKE am__leading_dot CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE EGREP LN_S ECHO AR ac_ct_AR RANLIB ac_ct_RANLIB DLLTOOL ac_ct_DLLTOOL AS ac_ct_AS OBJDUMP ac_ct_OBJDUMP CPP CXX CXXFLAGS ac_ct_CXX CXXDEPMODE am__fastdepCXX_TRUE am__fastdepCXX_FALSE CXXCPP F77 FFLAGS ac_ct_F77 LIBTOOL ALLOCA ASFLAGS CCAS CCASFLAGS am__fastdepOBJC_TRUE am__fastdepOBJC_FALSE ALSA_CFLAGS ALSA_LIBS alsa_lib ESD_CONFIG ESD_CFLAGS ESD_LIBS esd_lib ARTSCCONFIG arts_lib NASM NASMFLAGS X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS PKG_CONFIG DIRECTFB_CFLAGS DIRECTFB_LIBS OSMESA_CONFIG PTH_CONFIG ARCH TARGET_LINUX_TRUE TARGET_LINUX_FALSE TARGET_QTOPIA_TRUE TARGET_QTOPIA_FALSE TARGET_SOLARIS_TRUE TARGET_SOLARIS_FALSE TARGET_IRIX_TRUE TARGET_IRIX_FALSE TARGET_BSDI_TRUE TARGET_BSDI_FALSE TARGET_FREEBSD_TRUE TARGET_FREEBSD_FALSE TARGET_NETBSD_TRUE TARGET_NETBSD_FALSE TARGET_OPENBSD_TRUE TARGET_OPENBSD_FALSE TARGET_AIX_TRUE TARGET_AIX_FALSE TARGET_WIN32_TRUE TARGET_WIN32_FALSE TARGET_BEOS_TRUE TARGET_BEOS_FALSE TARGET_MACOS_TRUE TARGET_MACOS_FALSE TARGET_MACOSX_TRUE TARGET_MACOSX_FALSE TARGET_QNX_TRUE TARGET_QNX_FALSE TARGET_MINT_TRUE TARGET_MINT_FALSE USE_DIRECTX_TRUE USE_DIRECTX_FALSE USE_CLONE_TRUE USE_CLONE_FALSE HAVE_NASM_TRUE HAVE_NASM_FALSE ENABLE_SHARED_TRUE ENABLE_SHARED_FALSE ENABLE_STATIC_TRUE ENABLE_STATIC_FALSE AUDIO_SUBDIRS AUDIO_DRIVERS VIDEO_SUBDIRS VIDEO_DRIVERS JOYSTICK_SUBDIRS JOYSTICK_DRIVERS CDROM_SUBDIRS CDROM_DRIVERS SDL_EXTRADIRS SDL_EXTRALIBS SDL_CFLAGS SDL_LIBS SDL_STATIC_LIBS SDL_RLD_FLAGS STATIC_SYSTEM_LIBS SHARED_SYSTEM_LIBS SYSTEM_LIBS OBJC OBJCFLAGS OBJCDEPMODE LIBOBJS LTLIBOBJS'
+ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS SDL_MAJOR_VERSION SDL_MINOR_VERSION SDL_MICRO_VERSION SDL_INTERFACE_AGE SDL_BINARY_AGE SDL_VERSION LT_RELEASE LT_CURRENT LT_REVISION LT_AGE build build_cpu build_vendor build_os host host_cpu host_vendor host_os target target_cpu target_vendor target_os INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO AMTAR install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM mkdir_p AWK SET_MAKE am__leading_dot CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE EGREP LN_S ECHO AR ac_ct_AR RANLIB ac_ct_RANLIB DLLTOOL ac_ct_DLLTOOL AS ac_ct_AS OBJDUMP ac_ct_OBJDUMP CPP CXX CXXFLAGS ac_ct_CXX CXXDEPMODE am__fastdepCXX_TRUE am__fastdepCXX_FALSE CXXCPP F77 FFLAGS ac_ct_F77 LIBTOOL ALLOCA ASFLAGS CCAS CCASFLAGS am__fastdepOBJC_TRUE am__fastdepOBJC_FALSE ALSA_CFLAGS ALSA_LIBS alsa_lib ESD_CONFIG ESD_CFLAGS ESD_LIBS esd_lib ARTSCCONFIG arts_lib NASM NASMFLAGS X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS PKG_CONFIG DIRECTFB_CFLAGS DIRECTFB_LIBS OSMESA_CONFIG PTH_CONFIG ARCH TARGET_LINUX_TRUE TARGET_LINUX_FALSE TARGET_QTOPIA_TRUE TARGET_QTOPIA_FALSE TARGET_SOLARIS_TRUE TARGET_SOLARIS_FALSE TARGET_IRIX_TRUE TARGET_IRIX_FALSE TARGET_BSDI_TRUE TARGET_BSDI_FALSE TARGET_FREEBSD_TRUE TARGET_FREEBSD_FALSE TARGET_NETBSD_TRUE TARGET_NETBSD_FALSE TARGET_OPENBSD_TRUE TARGET_OPENBSD_FALSE TARGET_AIX_TRUE TARGET_AIX_FALSE TARGET_WIN32_TRUE TARGET_WIN32_FALSE TARGET_PS2SDK_TRUE TARGET_PS2SDK_FALSE TARGET_BEOS_TRUE TARGET_BEOS_FALSE TARGET_MACOS_TRUE TARGET_MACOS_FALSE TARGET_MACOSX_TRUE TARGET_MACOSX_FALSE TARGET_QNX_TRUE TARGET_QNX_FALSE TARGET_MINT_TRUE TARGET_MINT_FALSE USE_DIRECTX_TRUE USE_DIRECTX_FALSE USE_CLONE_TRUE USE_CLONE_FALSE HAVE_NASM_TRUE HAVE_NASM_FALSE ENABLE_SHARED_TRUE ENABLE_SHARED_FALSE ENABLE_STATIC_TRUE ENABLE_STATIC_FALSE AUDIO_SUBDIRS AUDIO_DRIVERS VIDEO_SUBDIRS VIDEO_DRIVERS JOYSTICK_SUBDIRS JOYSTICK_DRIVERS CDROM_SUBDIRS CDROM_DRIVERS SDL_EXTRADIRS SDL_EXTRALIBS SDL_CFLAGS SDL_LIBS SDL_STATIC_LIBS SDL_RLD_FLAGS STATIC_SYSTEM_LIBS SHARED_SYSTEM_LIBS SYSTEM_LIBS OBJC OBJCFLAGS OBJCDEPMODE LIBOBJS LTLIBOBJS'
 ac_subst_files=''
 
 # Initialize some variables set by options.
@@ -1077,6 +1077,7 @@ Optional Features:
   --enable-video-photon   use QNX Photon video driver default=yes
   --enable-video-fbcon    use framebuffer console video driver default=yes
   --enable-video-directfb use DirectFB video driver default=no
+  --enable-video-ps2sdk    use PS2SDK video driver default=yes
   --enable-video-ps2gs    use PlayStation 2 GS video driver default=yes
   --enable-video-ggi      use GGI video driver default=no
   --enable-video-svga     use SVGAlib video driver default=no
@@ -1546,6 +1547,7 @@ ac_cpp='$CPP $CPPFLAGS'
 ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
 ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
 ac_compiler_gnu=$ac_cv_c_compiler_gnu
+
 
 
 
@@ -3773,7 +3775,7 @@ ia64-*-hpux*)
   ;;
 *-*-irix6*)
   # Find out which ABI we are using.
-  echo '#line 3776 "configure"' > conftest.$ac_ext
+  echo '#line 3778 "configure"' > conftest.$ac_ext
   if { (eval echo "$as_me:$LINENO: \"$ac_compile\"") >&5
   (eval $ac_compile) 2>&5
   ac_status=$?
@@ -5580,7 +5582,7 @@ fi
 
 
 # Provide some information about the compiler.
-echo "$as_me:5583:" \
+echo "$as_me:5585:" \
      "checking for Fortran 77 compiler version" >&5
 ac_compiler=`set X $ac_compile; echo $2`
 { (eval echo "$as_me:$LINENO: \"$ac_compiler --version </dev/null >&5\"") >&5
@@ -6634,11 +6636,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:6637: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:6639: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>conftest.err)
    ac_status=$?
    cat conftest.err >&5
-   echo "$as_me:6641: \$? = $ac_status" >&5
+   echo "$as_me:6643: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s "$ac_outfile"; then
      # The compiler can only warn and ignore the option if not recognized
      # So say no if there are warnings
@@ -6877,11 +6879,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:6880: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:6882: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>conftest.err)
    ac_status=$?
    cat conftest.err >&5
-   echo "$as_me:6884: \$? = $ac_status" >&5
+   echo "$as_me:6886: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s "$ac_outfile"; then
      # The compiler can only warn and ignore the option if not recognized
      # So say no if there are warnings
@@ -6937,11 +6939,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:6940: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:6942: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>out/conftest.err)
    ac_status=$?
    cat out/conftest.err >&5
-   echo "$as_me:6944: \$? = $ac_status" >&5
+   echo "$as_me:6946: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s out/conftest2.$ac_objext
    then
      # The compiler can only warn and ignore the option if not recognized
@@ -9132,7 +9134,7 @@ else
   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
   lt_status=$lt_dlunknown
   cat > conftest.$ac_ext <<EOF
-#line 9135 "configure"
+#line 9137 "configure"
 #include "confdefs.h"
 
 #if HAVE_DLFCN_H
@@ -9230,7 +9232,7 @@ else
   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
   lt_status=$lt_dlunknown
   cat > conftest.$ac_ext <<EOF
-#line 9233 "configure"
+#line 9235 "configure"
 #include "confdefs.h"
 
 #if HAVE_DLFCN_H
@@ -11431,11 +11433,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:11434: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:11436: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>conftest.err)
    ac_status=$?
    cat conftest.err >&5
-   echo "$as_me:11438: \$? = $ac_status" >&5
+   echo "$as_me:11440: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s "$ac_outfile"; then
      # The compiler can only warn and ignore the option if not recognized
      # So say no if there are warnings
@@ -11491,11 +11493,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:11494: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:11496: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>out/conftest.err)
    ac_status=$?
    cat out/conftest.err >&5
-   echo "$as_me:11498: \$? = $ac_status" >&5
+   echo "$as_me:11500: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s out/conftest2.$ac_objext
    then
      # The compiler can only warn and ignore the option if not recognized
@@ -12854,7 +12856,7 @@ else
   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
   lt_status=$lt_dlunknown
   cat > conftest.$ac_ext <<EOF
-#line 12857 "configure"
+#line 12859 "configure"
 #include "confdefs.h"
 
 #if HAVE_DLFCN_H
@@ -12952,7 +12954,7 @@ else
   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
   lt_status=$lt_dlunknown
   cat > conftest.$ac_ext <<EOF
-#line 12955 "configure"
+#line 12957 "configure"
 #include "confdefs.h"
 
 #if HAVE_DLFCN_H
@@ -13789,11 +13791,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:13792: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:13794: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>conftest.err)
    ac_status=$?
    cat conftest.err >&5
-   echo "$as_me:13796: \$? = $ac_status" >&5
+   echo "$as_me:13798: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s "$ac_outfile"; then
      # The compiler can only warn and ignore the option if not recognized
      # So say no if there are warnings
@@ -13849,11 +13851,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:13852: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:13854: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>out/conftest.err)
    ac_status=$?
    cat out/conftest.err >&5
-   echo "$as_me:13856: \$? = $ac_status" >&5
+   echo "$as_me:13858: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s out/conftest2.$ac_objext
    then
      # The compiler can only warn and ignore the option if not recognized
@@ -15898,11 +15900,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:15901: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:15903: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>conftest.err)
    ac_status=$?
    cat conftest.err >&5
-   echo "$as_me:15905: \$? = $ac_status" >&5
+   echo "$as_me:15907: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s "$ac_outfile"; then
      # The compiler can only warn and ignore the option if not recognized
      # So say no if there are warnings
@@ -16141,11 +16143,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:16144: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:16146: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>conftest.err)
    ac_status=$?
    cat conftest.err >&5
-   echo "$as_me:16148: \$? = $ac_status" >&5
+   echo "$as_me:16150: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s "$ac_outfile"; then
      # The compiler can only warn and ignore the option if not recognized
      # So say no if there are warnings
@@ -16201,11 +16203,11 @@ else
    -e 's:.*FLAGS}? :&$lt_compiler_flag :; t' \
    -e 's: [^ ]*conftest\.: $lt_compiler_flag&:; t' \
    -e 's:$: $lt_compiler_flag:'`
-   (eval echo "\"\$as_me:16204: $lt_compile\"" >&5)
+   (eval echo "\"\$as_me:16206: $lt_compile\"" >&5)
    (eval "$lt_compile" 2>out/conftest.err)
    ac_status=$?
    cat out/conftest.err >&5
-   echo "$as_me:16208: \$? = $ac_status" >&5
+   echo "$as_me:16210: \$? = $ac_status" >&5
    if (exit $ac_status) && test -s out/conftest2.$ac_objext
    then
      # The compiler can only warn and ignore the option if not recognized
@@ -18396,7 +18398,7 @@ else
   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
   lt_status=$lt_dlunknown
   cat > conftest.$ac_ext <<EOF
-#line 18399 "configure"
+#line 18401 "configure"
 #include "confdefs.h"
 
 #if HAVE_DLFCN_H
@@ -18494,7 +18496,7 @@ else
   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
   lt_status=$lt_dlunknown
   cat > conftest.$ac_ext <<EOF
-#line 18497 "configure"
+#line 18499 "configure"
 #include "confdefs.h"
 
 #if HAVE_DLFCN_H
@@ -25327,6 +25329,79 @@ echo "${ECHO_T}$video_directfb" >&6
     fi
 }
 
+CheckPS2SDK()
+{
+    # Check whether --enable-video-ps2sdk or --disable-video-ps2sdk was given.
+if test "${enable_video_ps2sdk+set}" = set; then
+  enableval="$enable_video_ps2sdk"
+
+else
+  enable_video_ps2sdk=yes
+fi;
+    if test x$enable_video = xyes -a x$enable_video_ps2sdk = xyes; then
+        echo "$as_me:$LINENO: checking for PlayStation 2 GS support" >&5
+echo $ECHO_N "checking for PlayStation 2 GS support... $ECHO_C" >&6
+        video_ps2sdk=no
+        cat >conftest.$ac_ext <<_ACEOF
+/* confdefs.h.  */
+_ACEOF
+cat confdefs.h >>conftest.$ac_ext
+cat >>conftest.$ac_ext <<_ACEOF
+/* end confdefs.h.  */
+
+         #include <gsKit.h>
+         #include <dmaKit.h>
+
+int
+main ()
+{
+
+
+  ;
+  return 0;
+}
+_ACEOF
+rm -f conftest.$ac_objext
+if { (eval echo "$as_me:$LINENO: \"$ac_compile\"") >&5
+  (eval $ac_compile) 2>conftest.er1
+  ac_status=$?
+  grep -v '^ *+' conftest.er1 >conftest.err
+  rm -f conftest.er1
+  cat conftest.err >&5
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); } &&
+	 { ac_try='test -z "$ac_c_werror_flag"
+			 || test ! -s conftest.err'
+  { (eval echo "$as_me:$LINENO: \"$ac_try\"") >&5
+  (eval $ac_try) 2>&5
+  ac_status=$?
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); }; } &&
+	 { ac_try='test -s conftest.$ac_objext'
+  { (eval echo "$as_me:$LINENO: \"$ac_try\"") >&5
+  (eval $ac_try) 2>&5
+  ac_status=$?
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); }; }; then
+
+        video_ps2sdk=yes
+
+else
+  echo "$as_me: failed program was:" >&5
+sed 's/^/| /' conftest.$ac_ext >&5
+
+fi
+rm -f conftest.err conftest.$ac_objext conftest.$ac_ext
+        echo "$as_me:$LINENO: result: $video_ps2sdk" >&5
+echo "${ECHO_T}$video_ps2sdk" >&6
+        if test x$video_ps2sdk = xyes; then
+            CFLAGS="$CFLAGS -DENABLE_PS2SDK"
+            VIDEO_SUBDIRS="$VIDEO_SUBDIRS ps2sdk"
+            VIDEO_DRIVERS="$VIDEO_DRIVERS ps2sdk/libvideo_ps2sdk.la"
+        fi
+    fi
+}
+
 CheckPS2GS()
 {
     # Check whether --enable-video-ps2gs or --disable-video-ps2gs was given.
@@ -29601,6 +29676,7 @@ case "$target" in
         CheckDGA
         CheckFBCON
         CheckDirectFB
+        CheckPS2SDK
         CheckPS2GS
         CheckGGI
         CheckSVGA
@@ -31349,6 +31425,16 @@ fi
 
 
 
+if test $ARCH = ps2sdk; then
+  TARGET_PS2SDK_TRUE=
+  TARGET_PS2SDK_FALSE='#'
+else
+  TARGET_PS2SDK_TRUE='#'
+  TARGET_PS2SDK_FALSE=
+fi
+
+
+
 if test $ARCH = beos; then
   TARGET_BEOS_TRUE=
   TARGET_BEOS_FALSE='#'
@@ -31555,8 +31641,10 @@ echo "${ECHO_T}not implemented yet" >&6
 esac
 
 # Finally create all the generated files
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ac_config_files="$ac_config_files Makefile docs/Makefile docs/html/Makefile docs/man3/Makefile include/Makefile src/Makefile src/main/Makefile src/main/macosx/Makefile src/main/macosx/Info.plist src/audio/Makefile src/audio/alsa/Makefile src/audio/arts/Makefile src/audio/baudio/Makefile src/audio/dc/Makefile src/audio/disk/Makefile src/audio/dma/Makefile src/audio/dmedia/Makefile src/audio/dsp/Makefile src/audio/esd/Makefile src/audio/macosx/Makefile src/audio/macrom/Makefile src/audio/mint/Makefile src/audio/mme/Makefile src/audio/nas/Makefile src/audio/nto/Makefile src/audio/openbsd/Makefile src/audio/paudio/Makefile src/audio/riscos/Makefile src/audio/sun/Makefile src/audio/ums/Makefile src/audio/windib/Makefile src/audio/windx5/Makefile src/video/Makefile src/video/aalib/Makefile src/video/ataricommon/Makefile src/video/bwindow/Makefile src/video/cybergfx/Makefile src/video/dc/Makefile src/video/dga/Makefile src/video/directfb/Makefile src/video/dummy/Makefile src/video/epoc/Makefile src/video/fbcon/Makefile src/video/gem/Makefile src/video/ggi/Makefile src/video/maccommon/Makefile src/video/macdsp/Makefile src/video/macrom/Makefile src/video/nanox/Makefile src/video/photon/Makefile src/video/picogui/Makefile src/video/ps2gs/Makefile src/video/qtopia/Makefile src/video/quartz/Makefile src/video/riscos/Makefile src/video/svga/Makefile src/video/vgl/Makefile src/video/wincommon/Makefile src/video/windib/Makefile src/video/windx5/Makefile src/video/x11/Makefile src/video/xbios/Makefile src/video/XFree86/Makefile src/video/XFree86/extensions/Makefile src/video/XFree86/Xinerama/Makefile src/video/XFree86/Xv/Makefile src/video/XFree86/Xxf86dga/Makefile src/video/XFree86/Xxf86vm/Makefile src/events/Makefile src/joystick/Makefile src/joystick/amigaos/Makefile src/joystick/beos/Makefile src/joystick/bsd/Makefile src/joystick/darwin/Makefile src/joystick/dc/Makefile src/joystick/dummy/Makefile src/joystick/linux/Makefile src/joystick/macos/Makefile src/joystick/mint/Makefile src/joystick/riscos/Makefile src/joystick/win32/Makefile src/cdrom/Makefile src/cdrom/aix/Makefile src/cdrom/beos/Makefile src/cdrom/dc/Makefile src/cdrom/dummy/Makefile src/cdrom/bsdi/Makefile src/cdrom/freebsd/Makefile src/cdrom/linux/Makefile src/cdrom/macos/Makefile src/cdrom/macosx/Makefile src/cdrom/mint/Makefile src/cdrom/openbsd/Makefile src/cdrom/osf/Makefile src/cdrom/qnx/Makefile src/cdrom/win32/Makefile src/thread/Makefile src/timer/Makefile src/endian/Makefile src/file/Makefile src/cpuinfo/Makefile src/hermes/Makefile sdl-config SDL.spec SDL.qpg"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ac_config_files="$ac_config_files Makefile docs/Makefile docs/html/Makefile docs/man3/Makefile include/Makefile src/Makefile src/main/Makefile src/main/macosx/Makefile src/main/macosx/Info.plist src/audio/Makefile src/audio/alsa/Makefile src/audio/arts/Makefile src/audio/baudio/Makefile src/audio/dc/Makefile src/audio/disk/Makefile src/audio/dma/Makefile src/audio/dmedia/Makefile src/audio/dsp/Makefile src/audio/esd/Makefile src/audio/macosx/Makefile src/audio/macrom/Makefile src/audio/mint/Makefile src/audio/mme/Makefile src/audio/nas/Makefile src/audio/nto/Makefile src/audio/openbsd/Makefile src/audio/paudio/Makefile src/audio/ps2sdk/Makefile src/audio/riscos/Makefile src/audio/sun/Makefile src/audio/ums/Makefile src/audio/windib/Makefile src/audio/windx5/Makefile src/video/Makefile src/video/aalib/Makefile src/video/ataricommon/Makefile src/video/bwindow/Makefile src/video/cybergfx/Makefile src/video/dc/Makefile src/video/dga/Makefile src/video/directfb/Makefile src/video/dummy/Makefile src/video/epoc/Makefile src/video/fbcon/Makefile src/video/gem/Makefile src/video/ggi/Makefile src/video/maccommon/Makefile src/video/macdsp/Makefile src/video/macrom/Makefile src/video/nanox/Makefile src/video/photon/Makefile src/video/picogui/Makefile src/video/ps2gs/Makefile src/video/ps2sdk/Makefile src/video/qtopia/Makefile src/video/quartz/Makefile src/video/riscos/Makefile src/video/svga/Makefile src/video/vgl/Makefile src/video/wincommon/Makefile src/video/windib/Makefile src/video/windx5/Makefile src/video/x11/Makefile src/video/xbios/Makefile src/video/XFree86/Makefile src/video/XFree86/extensions/Makefile src/video/XFree86/Xinerama/Makefile src/video/XFree86/Xv/Makefile src/video/XFree86/Xxf86dga/Makefile src/video/XFree86/Xxf86vm/Makefile src/events/Makefile src/joystick/Makefile src/joystick/amigaos/Makefile src/joystick/beos/Makefile src/joystick/bsd/Makefile src/joystick/darwin/Makefile src/joystick/dc/Makefile src/joystick/dummy/Makefile src/joystick/linux/Makefile src/joystick/macos/Makefile src/joystick/mint/Makefile src/joystick/ps2sdk/Makefile src/joystick/riscos/Makefile src/joystick/win32/Makefile src/cdrom/Makefile src/cdrom/aix/Makefile src/cdrom/beos/Makefile src/cdrom/dc/Makefile src/cdrom/dummy/Makefile src/cdrom/bsdi/Makefile src/cdrom/freebsd/Makefile src/cdrom/linux/Makefile src/cdrom/macos/Makefile src/cdrom/macosx/Makefile src/cdrom/mint/Makefile src/cdrom/openbsd/Makefile src/cdrom/osf/Makefile src/cdrom/ps2sdk/Makefile src/cdrom/qnx/Makefile src/cdrom/win32/Makefile src/thread/Makefile src/timer/Makefile src/endian/Makefile src/file/Makefile src/cpuinfo/Makefile src/hermes/Makefile sdl-config SDL.spec SDL.qpg"
+
           ac_config_commands="$ac_config_commands default"
+
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
 # tests run on this system so they can be shared between configure
@@ -31788,6 +31876,13 @@ if test -z "${TARGET_WIN32_TRUE}" && test -z "${TARGET_WIN32_FALSE}"; then
   { { echo "$as_me:$LINENO: error: conditional \"TARGET_WIN32\" was never defined.
 Usually this means the macro was only invoked conditionally." >&5
 echo "$as_me: error: conditional \"TARGET_WIN32\" was never defined.
+Usually this means the macro was only invoked conditionally." >&2;}
+   { (exit 1); exit 1; }; }
+fi
+if test -z "${TARGET_PS2SDK_TRUE}" && test -z "${TARGET_PS2SDK_FALSE}"; then
+  { { echo "$as_me:$LINENO: error: conditional \"TARGET_PS2SDK\" was never defined.
+Usually this means the macro was only invoked conditionally." >&5
+echo "$as_me: error: conditional \"TARGET_PS2SDK\" was never defined.
 Usually this means the macro was only invoked conditionally." >&2;}
    { (exit 1); exit 1; }; }
 fi
@@ -32327,6 +32422,7 @@ do
   "src/audio/nto/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/audio/nto/Makefile" ;;
   "src/audio/openbsd/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/audio/openbsd/Makefile" ;;
   "src/audio/paudio/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/audio/paudio/Makefile" ;;
+  "src/audio/ps2sdk/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/audio/ps2sdk/Makefile" ;;
   "src/audio/riscos/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/audio/riscos/Makefile" ;;
   "src/audio/sun/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/audio/sun/Makefile" ;;
   "src/audio/ums/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/audio/ums/Makefile" ;;
@@ -32352,6 +32448,7 @@ do
   "src/video/photon/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/video/photon/Makefile" ;;
   "src/video/picogui/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/video/picogui/Makefile" ;;
   "src/video/ps2gs/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/video/ps2gs/Makefile" ;;
+  "src/video/ps2sdk/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/video/ps2sdk/Makefile" ;;
   "src/video/qtopia/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/video/qtopia/Makefile" ;;
   "src/video/quartz/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/video/quartz/Makefile" ;;
   "src/video/riscos/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/video/riscos/Makefile" ;;
@@ -32379,6 +32476,7 @@ do
   "src/joystick/linux/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/joystick/linux/Makefile" ;;
   "src/joystick/macos/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/joystick/macos/Makefile" ;;
   "src/joystick/mint/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/joystick/mint/Makefile" ;;
+  "src/joystick/ps2sdk/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/joystick/ps2sdk/Makefile" ;;
   "src/joystick/riscos/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/joystick/riscos/Makefile" ;;
   "src/joystick/win32/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/joystick/win32/Makefile" ;;
   "src/cdrom/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/cdrom/Makefile" ;;
@@ -32394,6 +32492,7 @@ do
   "src/cdrom/mint/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/cdrom/mint/Makefile" ;;
   "src/cdrom/openbsd/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/cdrom/openbsd/Makefile" ;;
   "src/cdrom/osf/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/cdrom/osf/Makefile" ;;
+  "src/cdrom/ps2sdk/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/cdrom/ps2sdk/Makefile" ;;
   "src/cdrom/qnx/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/cdrom/qnx/Makefile" ;;
   "src/cdrom/win32/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/cdrom/win32/Makefile" ;;
   "src/thread/Makefile" ) CONFIG_FILES="$CONFIG_FILES src/thread/Makefile" ;;
@@ -32621,6 +32720,8 @@ s,@TARGET_AIX_TRUE@,$TARGET_AIX_TRUE,;t t
 s,@TARGET_AIX_FALSE@,$TARGET_AIX_FALSE,;t t
 s,@TARGET_WIN32_TRUE@,$TARGET_WIN32_TRUE,;t t
 s,@TARGET_WIN32_FALSE@,$TARGET_WIN32_FALSE,;t t
+s,@TARGET_PS2SDK_TRUE@,$TARGET_PS2SDK_TRUE,;t t
+s,@TARGET_PS2SDK_FALSE@,$TARGET_PS2SDK_FALSE,;t t
 s,@TARGET_BEOS_TRUE@,$TARGET_BEOS_TRUE,;t t
 s,@TARGET_BEOS_FALSE@,$TARGET_BEOS_FALSE,;t t
 s,@TARGET_MACOS_TRUE@,$TARGET_MACOS_TRUE,;t t

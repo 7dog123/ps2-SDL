@@ -41,14 +41,12 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = @build@
 host_triplet = @host@
-target_triplet = @target@
 subdir = src/main
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
-	$(top_srcdir)/configure.in
+	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
@@ -59,7 +57,10 @@ libLIBRARIES_INSTALL = $(INSTALL_DATA)
 LIBRARIES = $(lib_LIBRARIES)
 libSDLmain_a_AR = $(AR) $(ARFLAGS)
 libSDLmain_a_LIBADD =
-am__libSDLmain_a_SOURCES_DIST = dummy/SDL_dummy_main.c
+am__libSDLmain_a_SOURCES_DIST = ps2sdk/sdl_main.c \
+	qtopia/SDL_qtopia_main.cc
+@TARGET_MACOSX_FALSE@@TARGET_PS2SDK_TRUE@@TARGET_QTOPIA_TRUE@@TARGET_WIN32_FALSE@am__objects_1 = sdl_main.$(OBJEXT) \
+@TARGET_MACOSX_FALSE@@TARGET_PS2SDK_TRUE@@TARGET_QTOPIA_TRUE@@TARGET_WIN32_FALSE@	SDL_qtopia_main.$(OBJEXT)
 @TARGET_MACOSX_FALSE@@TARGET_QTOPIA_FALSE@@TARGET_WIN32_FALSE@am__objects_1 = SDL_dummy_main.$(OBJEXT)
 @TARGET_MACOSX_FALSE@@TARGET_QTOPIA_TRUE@@TARGET_WIN32_FALSE@am__objects_1 = SDL_qtopia_main.$(OBJEXT)
 @TARGET_MACOSX_TRUE@@TARGET_WIN32_FALSE@am__objects_1 =  \
@@ -81,7 +82,8 @@ am__depfiles_maybe = depfiles
 @AMDEP_TRUE@	./$(DEPDIR)/SDL_BeApp.Plo \
 @AMDEP_TRUE@	./$(DEPDIR)/SDL_dummy_main.Po \
 @AMDEP_TRUE@	./$(DEPDIR)/SDL_qtopia_main.Po \
-@AMDEP_TRUE@	./$(DEPDIR)/SDL_win32_main.Po ./$(DEPDIR)/arch.Plo
+@AMDEP_TRUE@	./$(DEPDIR)/SDL_win32_main.Po ./$(DEPDIR)/arch.Plo \
+@AMDEP_TRUE@	./$(DEPDIR)/sdl_main.Po
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) \
@@ -241,6 +243,8 @@ TARGET_NETBSD_FALSE = @TARGET_NETBSD_FALSE@
 TARGET_NETBSD_TRUE = @TARGET_NETBSD_TRUE@
 TARGET_OPENBSD_FALSE = @TARGET_OPENBSD_FALSE@
 TARGET_OPENBSD_TRUE = @TARGET_OPENBSD_TRUE@
+TARGET_PS2SDK_FALSE = @TARGET_PS2SDK_FALSE@
+TARGET_PS2SDK_TRUE = @TARGET_PS2SDK_TRUE@
 TARGET_QNX_FALSE = @TARGET_QNX_FALSE@
 TARGET_QNX_TRUE = @TARGET_QNX_TRUE@
 TARGET_QTOPIA_FALSE = @TARGET_QTOPIA_FALSE@
@@ -318,12 +322,14 @@ ARCH_SUBDIRS = $(srcdir)/beos \
                $(srcdir)/dummy \
                $(srcdir)/macos \
                $(srcdir)/macosx \
+               $(srcdir)/ps2sdk \
                $(srcdir)/qtopia \
                $(srcdir)/win32
 
 
 # Build a separate library containing the main() entry point.
 lib_LIBRARIES = libSDLmain.a
+@TARGET_MACOSX_FALSE@@TARGET_PS2SDK_TRUE@@TARGET_QTOPIA_TRUE@@TARGET_WIN32_FALSE@MAINLIB_ARCH_SRCS = ps2sdk/sdl_main.c
 @TARGET_MACOSX_FALSE@@TARGET_QTOPIA_FALSE@@TARGET_WIN32_FALSE@MAINLIB_ARCH_SRCS = dummy/SDL_dummy_main.c
 @TARGET_MACOSX_FALSE@@TARGET_QTOPIA_TRUE@@TARGET_WIN32_FALSE@MAINLIB_ARCH_SRCS = qtopia/SDL_qtopia_main.cc
 @TARGET_MACOSX_TRUE@@TARGET_WIN32_FALSE@MAINLIB_ARCH_SRCS = macosx/SDLMain.m macosx/SDLMain.h
@@ -348,9 +354,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign  src/main/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  src/main/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --foreign  src/main/Makefile
+	  $(AUTOMAKE) --gnu  src/main/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -425,6 +431,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/SDL_qtopia_main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/SDL_win32_main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/arch.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/sdl_main.Po@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	if $(COMPILE) -MT $@ -MD -MP -MF "$(DEPDIR)/$*.Tpo" -c -o $@ $<; \
@@ -449,6 +456,30 @@ distclean-compile:
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/$*.Plo' tmpdepfile='$(DEPDIR)/$*.TPlo' @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(LTCOMPILE) -c -o $@ $<
+
+sdl_main.o: ps2sdk/sdl_main.c
+@am__fastdepCC_TRUE@	if $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT sdl_main.o -MD -MP -MF "$(DEPDIR)/sdl_main.Tpo" -c -o sdl_main.o `test -f 'ps2sdk/sdl_main.c' || echo '$(srcdir)/'`ps2sdk/sdl_main.c; \
+@am__fastdepCC_TRUE@	then mv -f "$(DEPDIR)/sdl_main.Tpo" "$(DEPDIR)/sdl_main.Po"; else rm -f "$(DEPDIR)/sdl_main.Tpo"; exit 1; fi
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='ps2sdk/sdl_main.c' object='sdl_main.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/sdl_main.Po' tmpdepfile='$(DEPDIR)/sdl_main.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o sdl_main.o `test -f 'ps2sdk/sdl_main.c' || echo '$(srcdir)/'`ps2sdk/sdl_main.c
+
+sdl_main.obj: ps2sdk/sdl_main.c
+@am__fastdepCC_TRUE@	if $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT sdl_main.obj -MD -MP -MF "$(DEPDIR)/sdl_main.Tpo" -c -o sdl_main.obj `if test -f 'ps2sdk/sdl_main.c'; then $(CYGPATH_W) 'ps2sdk/sdl_main.c'; else $(CYGPATH_W) '$(srcdir)/ps2sdk/sdl_main.c'; fi`; \
+@am__fastdepCC_TRUE@	then mv -f "$(DEPDIR)/sdl_main.Tpo" "$(DEPDIR)/sdl_main.Po"; else rm -f "$(DEPDIR)/sdl_main.Tpo"; exit 1; fi
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='ps2sdk/sdl_main.c' object='sdl_main.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/sdl_main.Po' tmpdepfile='$(DEPDIR)/sdl_main.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o sdl_main.obj `if test -f 'ps2sdk/sdl_main.c'; then $(CYGPATH_W) 'ps2sdk/sdl_main.c'; else $(CYGPATH_W) '$(srcdir)/ps2sdk/sdl_main.c'; fi`
+
+sdl_main.lo: ps2sdk/sdl_main.c
+@am__fastdepCC_TRUE@	if $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT sdl_main.lo -MD -MP -MF "$(DEPDIR)/sdl_main.Tpo" -c -o sdl_main.lo `test -f 'ps2sdk/sdl_main.c' || echo '$(srcdir)/'`ps2sdk/sdl_main.c; \
+@am__fastdepCC_TRUE@	then mv -f "$(DEPDIR)/sdl_main.Tpo" "$(DEPDIR)/sdl_main.Plo"; else rm -f "$(DEPDIR)/sdl_main.Tpo"; exit 1; fi
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='ps2sdk/sdl_main.c' object='sdl_main.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	depfile='$(DEPDIR)/sdl_main.Plo' tmpdepfile='$(DEPDIR)/sdl_main.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o sdl_main.lo `test -f 'ps2sdk/sdl_main.c' || echo '$(srcdir)/'`ps2sdk/sdl_main.c
 
 SDL_dummy_main.o: dummy/SDL_dummy_main.c
 @am__fastdepCC_TRUE@	if $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT SDL_dummy_main.o -MD -MP -MF "$(DEPDIR)/SDL_dummy_main.Tpo" -c -o SDL_dummy_main.o `test -f 'dummy/SDL_dummy_main.c' || echo '$(srcdir)/'`dummy/SDL_dummy_main.c; \

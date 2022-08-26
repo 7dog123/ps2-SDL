@@ -23,6 +23,7 @@ DIST_SUBDIRS =	\
 	nto	\
 	openbsd	\
 	paudio	\
+        ps2sdk  \
 	riscos	\
 	sun	\
 	ums	\

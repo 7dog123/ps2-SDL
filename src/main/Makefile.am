@@ -9,6 +9,7 @@ ARCH_SUBDIRS = $(srcdir)/beos \
                $(srcdir)/dummy \
                $(srcdir)/macos \
                $(srcdir)/macosx \
+               $(srcdir)/ps2sdk \
                $(srcdir)/qtopia \
                $(srcdir)/win32
 
@@ -25,6 +26,10 @@ if TARGET_QTOPIA
 MAINLIB_ARCH_SRCS = qtopia/SDL_qtopia_main.cc
 else
 MAINLIB_ARCH_SRCS = dummy/SDL_dummy_main.c
+else
+if TARGET_PS2SDK
+MAINLIB_ARCH_SRCS = ps2sdk/sdl_main.c
+endif # !TARGET_PS2SDK
 endif # !TARGET_QTOPIA
 endif # !TARGET_MACOSX
 endif # !TARGET_WIN32

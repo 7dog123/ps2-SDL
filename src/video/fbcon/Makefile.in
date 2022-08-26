@@ -36,14 +36,12 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = @build@
 host_triplet = @host@
-target_triplet = @target@
 subdir = src/video/fbcon
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
-	$(top_srcdir)/configure.in
+	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
@@ -206,6 +204,8 @@ TARGET_NETBSD_FALSE = @TARGET_NETBSD_FALSE@
 TARGET_NETBSD_TRUE = @TARGET_NETBSD_TRUE@
 TARGET_OPENBSD_FALSE = @TARGET_OPENBSD_FALSE@
 TARGET_OPENBSD_TRUE = @TARGET_OPENBSD_TRUE@
+TARGET_PS2SDK_FALSE = @TARGET_PS2SDK_FALSE@
+TARGET_PS2SDK_TRUE = @TARGET_PS2SDK_TRUE@
 TARGET_QNX_FALSE = @TARGET_QNX_FALSE@
 TARGET_QNX_TRUE = @TARGET_QNX_TRUE@
 TARGET_QTOPIA_FALSE = @TARGET_QTOPIA_FALSE@
@@ -318,9 +318,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign  src/video/fbcon/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  src/video/fbcon/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --foreign  src/video/fbcon/Makefile
+	  $(AUTOMAKE) --gnu  src/video/fbcon/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
